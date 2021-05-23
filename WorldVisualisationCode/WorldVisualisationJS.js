@@ -5833,11 +5833,11 @@ $(function() {
     $('#container').highcharts('Map', {
   
       title: {
-        text: 'Highmaps with time control'
+        text: 'Countries Education Index (From 1990 to 2019)'
       },
   
       subtitle: {
-        text: 'Source map: <a href="https://code.highcharts.com/mapdata/custom/world.js">Australia</a>'
+        text: 'Source map: <a href="https://code.highcharts.com/mapdata/custom/world.js">World</a>'
       },
   
       mapNavigation: {
@@ -5850,7 +5850,6 @@ $(function() {
       colorAxis: {
         min: 0,
         max: 1,
-        Range:10
       },
   
       series: [{

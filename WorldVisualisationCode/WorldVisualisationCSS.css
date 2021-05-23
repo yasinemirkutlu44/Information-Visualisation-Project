@@ -21,17 +21,7 @@
     display: inline-block;
     vertical-align: middle;
 }
-#play-pause-button {
-    background-color: #4CAF50;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    font-size: 15px;
-    cursor: pointer;
-    border: 1px solid silver;
-    border-radius: 3px;
-    background: #f8f8f8;
-}
+
 #play-range {
     margin: 2.5%;
     width: 70%;

@@ -5833,7 +5833,7 @@ $(function() {
     $('#container').highcharts('Map', {
   
       title: {
-        text: 'Countries Education Index (From 1990 to 2019)'
+        text: 'Countries Education Index (From 1990 to 2018)'
       },
   
       subtitle: {
@@ -5850,6 +5850,17 @@ $(function() {
       colorAxis: {
         min: 0,
         max: 1,
+        stops: [
+          [0, '#FF0000'],
+          [0.125, '#FF5C5C'],
+          [0.250, '#FF7F00'],
+          [0.375, '#FFB347'],
+          [0.500, '#FFFF00 '],
+          [0.625, '#D4FF00	'],
+          [0.750, '#66FF00 '],
+          [0.875, '#008000 '],
+          [1, '#008000']
+        ]
       },
   
       series: [{
@@ -5892,25 +5903,25 @@ $(function() {
     /**
      * Play the timeline.
      */
-    function play(button) {
+    /*function play(button) {
       button.title = 'pause';
       button.className = 'fa fa-pause';
       chart.sequenceTimer = setInterval(function() {
         update(1);
       }, 500);
   
-    }
+    }*/
   
     /** 
      * Pause the timeline, either when the range is ended, or when clicking the pause button.
      * Pausing stops the timer and resets the button to play mode.
      */
-    function pause(button) {
+    /*function pause(button) {
       button.title = 'play';
       button.className = 'fa fa-play';
       clearTimeout(chart.sequenceTimer);
       chart.sequenceTimer = undefined;
-    }
+    }*/
   
     /**
      * Toggle play and pause from the button

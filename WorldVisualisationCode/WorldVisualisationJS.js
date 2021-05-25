@@ -5831,9 +5831,12 @@ $(function() {
   
     // Initiate the chart
     $('#container').highcharts('Map', {
+
+      colors: ['#FF0000', '#FF5C5C', '#FF7F00',
+                '#FFB347', '#D4FF00', '#66FF00 ', '#008000'],
   
       title: {
-        text: 'Countries Education Index (From 1990 to 2018)'
+        text: 'Countries Education Index (From 1990 to 2019)'
       },
   
       subtitle: {
@@ -5895,9 +5898,9 @@ $(function() {
       }
       chart.series[0].setData(dataSequence[input.value].record); // Increment dataset (updates chart)
       output.innerHTML = dataSequence[input.value].name // Output value
-      if (input.value >= input.max) { // Auto-pause
+      /*if (input.value >= input.max) { // Auto-pause
         pause($('#play-pause-button')[0]);
-      }
+      }*/
     }
   
     /**
@@ -5926,13 +5929,13 @@ $(function() {
     /**
      * Toggle play and pause from the button
      */
-    $('#play-pause-button').bind('click', function() {
+    /*$('#play-pause-button').bind('click', function() {
       if (chart.sequenceTimer === undefined) {
         play(this);
       } else {
         pause(this);
       }
-    });
+    });*/
   
     /**
      * Update the chart when the input is changed
